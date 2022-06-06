@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/Icons/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Regalitos Nao | Tienda</title>
+</head>
+<body>
+    <header class="header">
+        <div class="textoNav">
+            <span id="specialoffer">¡Las compras se realizan a través de Instagram, Whatsapp o Facebook!</span>
+        </div>
+        <nav class="nav">
+            <a href="../index.html" class="nav__logo">Regalitos Nao</a>
+            <button class="nav__toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+        <ul class="nav__list">
+            <li class="nav__elemento"><a href="../index.html">Inicio</a></li>
+            <li class="nav__elemento"><a href="./tienda.html">Tienda</a></li>
+            <li class="nav__elemento"><a href="./acercaDe.html">Acerca De</a></li>
+            <li class="nav__elemento"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main__contactoBanner">
+            <img src="../Assets/Flayer/FAYER TIENDA .jpg" alt="flayerTienda">
+        </div>
+        <section id="item_detail">
+		</section>
+        <section id="items_container">
+          	<div class="tienda_container">
+            	<div class="search_container">
+                	<span class="categorytitle">Buscar:</span>
+                	<div class="input-group col-md-4">
+                    	<input class="form-control py-2 border-right-0 border" type="search" placeholder="busca por nombre" id="searchinput">
+                      	<div class="btn border-left-0 border">
+                        		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                      	</div>
+                	</div>
+            	</div>
+				<div class="ocation_container">
+					<span class="categorytitle">Ocaciones:</span>
+					<a class="ocation" id="amor" href="#">Amor</a>
+					<a class="ocation" id="amistad" href="#">Amistad</a>
+					<a class="ocation" id="aniversario" href="#">Aniversario</a>
+					<a class="ocation" id="bodas" href="#">Bodas</a>
+					<a class="ocation" id="nacimientos" href="#">Nacimientos</a>
+				</div>
+				<div class="category_container">
+					<b class="categorytitle">Categorias:</b>
+					<a class="category" id="handmade&ALL" href="#">Hecho a mano</a>
+					<ul id="handmadelist" class="hidden">
+						<li class="subcategoryli"><a class="subcategory" id="handmade&esculturas" href="#">Esculturas</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="handmade&llaveros" href="#">Llaveros</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="handmade&cuadros" href="#">Cuadros</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="handmade&souvenirs" href="#">Souvenirs</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="handmade&scrap" href="#">Tarjetas tipo Scrap</a></li>
+					</ul>
+					<a class="category" id="regalartevida&ALL" href="#">RegalARTE Vida</a>
+					<ul id="regalartevidalist" class="hidden">
+						<li class="subcategoryli"><a class="subcategory" id="regalartevida&paisajestematicos" href="#">Paisajes Naturales Temáticos</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="regalartevida&paisajesamor" href="#">Paisajes historia de amor</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="regalartevida&suculentas" href="#">Suculentas</a></li>
+					</ul>
+					<a class="category" id="naoscake&ALL" href="#">Nao's Cake</a>
+					<ul id="naoscakelist" class="hidden">
+						<li class="subcategoryli"><a class="subcategory" id="naoscake&tortastematicas" href="#">Tortas Nao temáticas</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="naoscake&tortasestacion" href="#">Tortas Nao de estación</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="naoscake&tortasbodas" href="#">Tortas Nao de bodas</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="naoscake&cupcakesnao" href="#">Cupcakes Nao</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="naoscake&minipetitcake" href="#">Mini & petitcake</a></li>
+						<li class="subcategoryli"><a class="subcategory" id="naoscake&galletas" href="#">Galletas</a></li>
+					</ul>
+				</div>
+				<div class="cartas_container">
+					<div class="tienda__cartas" id="itemContainer">
+					</div>
+				</div>
+				<div class="pagination_container">
+					<ul class="pagination">
+						<li class="pageitem" id="prevPage">
+							<a class="page-link border-0" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<div class="page-container" id="pageContainer">
+							<li class="pageitem"><a class="page-link border-0">1</a></li>
+							<li class="pageitem"><a class="page-link border-0">2</a></li>
+							<li class="pageitem"><a class="page-link border-0">3</a></li>
+						</div>
+						<li class="pageitem" id="nextPage">
+							<a class="page-link border-0" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+        	</div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__envios">
+              <span>Envíos a todo el Peru</span>
+              <img src="../Assets/shipmentIcon.png">
+            </div>
+               <div class="footer__iconsHrs">
+                   <div class="footer__icons">
+                       <a href="https://www.facebook.com/regalitosnao">
+                           <img src="../Assets/Icons/facebook.png" alt="iconoFacebook">
+                       </a>
+                      <a class="footer__icons--medio" href="https://www.instagram.com/regalitosnao/">
+                          <img src="../Assets/Icons/instagram.png" alt="iconoInstagram">
+                      </a>
+                      <a href="https://wa.me/message/MTHVWCT5MWINJ1">
+                          <img src="../Assets/Icons/whatsapp.png" alt="iconoWhatsapp">
+                      </a>
+                   </div>
+                   <span>Horarios:</span>
+                   <span>Lun a Viern: 09:00hs - 20:00hs</span>
+                   <span>Sábados: 09:00hs - 20:00hs</span>
+               </div>
+               <div class="footer__mediosPago">
+                <span>Medios de pago:</span>
+                <div>
+                  <img src="../Assets/Icons/bcp.png" alt="iconoBcp">
+                  <img src="../Assets/Icons/yape.png" alt="iconoYape">
+                </div>
+               </div>
+               <div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.1138981211766!2d-79.8606844!3d-6.7559627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceeee9e8eba99%3A0xd0732f1dd67f0fa5!2sAv%20Lora%20y%20Lora%201973%2C%20Jos%C3%A9%20Leonardo%20Ortiz%2014002%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sar!4v1654285325259!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div>
+            <span class="textoFooter">© Regalitos Nao | Todos los derechos reservados. </span>
+        </div>
+        </footer>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../src/index.js" type="module"></script>
+    <script>
+        const message = document.getElementById("specialoffer");
+        window.addEventListener("load",loadMessage);
+        async function loadMessage(event){
+            const requestOptions = {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            };
+            const response = await fetch( "https://regalitosnaobackend2.herokuapp.com/api/messages/629d1a45d5a4c4e75ae57dda",
+            requestOptions
+            );
+            const data = await response.json();
+            message.innerHTML = `${data.data.text}`
+        }
+      </script>
+</body>
+</html>
